@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgroundColor-project</title>
+    <style>
+        input{
+            height: 20px;
+            width:350px;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            text-align: center;
+            outline: none;
+            margin-top:10px ;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div style="margin-top: 100px;">
+    <center><h1>backgroundColor-project</h1></center>
+<center><i>type your color and change the backgroundColor</i></center>
+    <center><input type="text" name="" id="one"></center>
+</div>
+    <script>
+        
+        let how=document.querySelector("#one");
+
+        how.addEventListener("input",function(){
+        
+            let red="red";
+            let blue="blue";
+            let green="green";
+            let pink="pink";
+            let black="black"
+            let yellow="yellow";
+            let grey="grey";
+
+            let good=this.value;
+            if(good==red)
+            {
+              document.body.style.backgroundColor="red";
+            }
+            else if(good==blue){
+                document.body.style.backgroundColor="blue";
+
+            }
+            else if(good==green){
+                document.body.style.backgroundColor="green";
+
+            }
+            else if(good==pink){
+                document.body.style.backgroundColor="pink";
+
+            }
+            else if(good==black){
+                document.body.style.backgroundColor="black";
+
+                let how=document.querySelector("h1");
+                how.style.color="white";
+
+            }
+           
+            else if(good==yellow){
+                document.body.style.backgroundColor="yellow";
+
+            }
+            else if(good==grey){
+                document.body.style.backgroundColor="grey";
+
+            }
+            else{
+                document.body.style.backgroundColor="white";
+            }
+
+        })
+
+        
+        
+    </script>
+</body>
+</html>
